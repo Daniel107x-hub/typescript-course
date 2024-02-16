@@ -1,8 +1,7 @@
 import axios from "axios";
-import { use } from "express/lib/router";
 
 //Usamos las interfaces para definir los tipos de un objeto
-interface Post {
+interface Post { // Create a new type named Post
     id: number;
     title: string;
     userId: number;
@@ -15,6 +14,6 @@ axios.get(url).then(response => {
     logPost(id, title, userId);
 })
 
-const logPost = (id: number, title: string, userId: number) => {
+const logPost = (id: number, title: string, userId: number) => { // Typescript allows you if we make an error in type of the arguments
     console.log(`The post with id: ${id} has title: ${title} and author: ${userId}`)
 }
