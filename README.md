@@ -31,4 +31,41 @@ Types are the basic building block of a typescript application, so they are used
 ```typescript
   let variableName: TYPE = VALUE;
 ```
-Con TYPE podemos definir el tipo de una variable y finalmente le asignamos un valor de dicho tipo
+Con TYPE podemos definir el tipo de una variable y finalmente le asignamos un valor de dicho tipo.
+
+- Definicion de un arreglo de strings
+```typescript
+  let arrayOfStrings: string[] = ['hello', 'my', 'name']
+```
+- Array of numberss
+```typescript
+  let numbers: number[] = [1, 2, 3]
+```
+
+- Array de booleans
+```typescript
+  let booleans: boolean[] = [true, true, false]
+```
+
+- Clases
+```typescript
+  class Car{}
+  let car: Car = new Car();
+```
+
+- Object literals
+```typescript
+  let point: {x: number; y: number} = { // We put the name of the properties and the type 
+    x: 10,
+    y: 20
+  }
+```
+
+- Functions
+```typescript
+  const logNumber: 
+    (i: number) => void =  // This variable will hold a function which received a parameter named i of type number and will return void (Nothing)
+      (i: number) => { // The function itself will receive an arument of type number
+        console.log(i);
+      }
+```
