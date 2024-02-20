@@ -69,3 +69,20 @@ Con TYPE podemos definir el tipo de una variable y finalmente le asignamos un va
         console.log(i);
       }
 ```
+
+### Type inference
+1. Si la declaracion y la inicialiacion se escriben en la misma linea typescript infiere el tipo de la variable. Si esta esta separada veremos que typescript asignara un tipo any.
+```typescript
+  const color = 'red' //Typescript knows this is a string
+```
+2. Debemos usar las anotaciones de tipado cuando el tipo no pueda ser inferido.
+3. Cuando una funcione retorne el tipo **any** y queramos clarificar el valor.
+
+Para todos los demas casos, usaremos la inferencia de tipos, es decir, no escribiremos un tipo explicitamente.
+
+**Evitar variables con tipo any de ser posible.**
+
+Es posible indicar que dos tipos puedens er signados a una variable:
+```typescript
+  let numberAboveZero: boolean | number = false;
+```

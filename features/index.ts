@@ -50,3 +50,12 @@ logNumber(30);
 const json = '{"x": 10, "y": 20}';
 const coordinates: { x: number; y:number} = JSON.parse(json); // Parse method returns any type since the value depends on what it's parsing
 console.log(coordinates); // {x: 10, y: 20}
+
+// When inference doesn't work
+let numbers: number[] = [1, 2, 3];
+let numberAboveZero: boolean | number = false;
+for(let i = 0; i < numbers.length; i++) {
+  if(numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
