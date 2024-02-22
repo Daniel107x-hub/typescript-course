@@ -87,7 +87,22 @@ Es posible indicar que dos tipos puedens er signados a una variable:
   let numberAboveZero: boolean | number = false;
 ```
 
-### Anotations o functions
+## Anotations o functions
 Agregaremos anotaciones para indicarle a typescript el tipo de argumentos que recibira y el tipo de valor de retorno.
 (C, Y, N)
+
+
+## Arrays
+- Para idicar que un array multidimensional tiene un tipo, basta con usar la siguiente notacion
+```typescript
+  const names: string[][];
+```
+- Para utilizar multiples tipos en un array
+```typescript
+  const dates: (Date | string)[];
+```
+
+## Tuplas
+A diferencia de los arreglos, los cuales manntienen de 0 a muchos objetos y donde el orden de 
+estos elementos no importa mucho, utilizamos las tuplas donde el indice  el tipo importan.
 
