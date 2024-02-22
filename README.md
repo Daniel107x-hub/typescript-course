@@ -86,3 +86,8 @@ Es posible indicar que dos tipos puedens er signados a una variable:
 ```typescript
   let numberAboveZero: boolean | number = false;
 ```
+
+### Anotations o functions
+Agregaremos anotaciones para indicarle a typescript el tipo de argumentos que recibira y el tipo de valor de retorno.
+(C, Y, N)
+
